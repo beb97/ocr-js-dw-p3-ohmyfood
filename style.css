@@ -204,11 +204,19 @@ img {
     transition: 1s;
 }
 
+#menu {
+    background-color: var(--bg-light);
+}
+
+.plat {
+    margin: 10px;
+}
+
 #menu-title {
     margin: 0px;
     margin-top: -20px;
     padding: 20px;
-    background-color: white;
+    background-color: var(--bg-light);
     border-radius: 30px;
     overflow: hidden;
     justify-content: space-between;
@@ -239,6 +247,7 @@ img {
     align-items: center;
     height: 80px;
     margin-bottom: 10px;
+    background-color: white;
 }
 
 .item-text {
@@ -305,6 +314,7 @@ footer > ul > li{
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 a:visited {
