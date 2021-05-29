@@ -20,14 +20,29 @@ main {
 h1 {
     font-family: 'Shrikhand', cursive;
     margin: 10px;
+    font-size: 2em;
 }
 
-#presentation {
-    background-color: var(--bg-light);
-    counter-reset: section;
+h2 {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-#presentation > h2 {
+
+h3 {
+    text-transform: uppercase;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+hr {
+    width: 50px;
+    border: 2px solid var(--color-tertiary);
+    margin: 5px;
+    margin-left: 10px;
+}
+
+header > h2 {
     border-top: 2px solid #D2D2D2;
     background-color: var(--bg-medium);
     padding: 10px;
@@ -35,6 +50,15 @@ h1 {
     color: var(--bg-dark);
 }
 
+#presentation {
+    background-color: var(--bg-light);
+    counter-reset: section;
+    max-width: 425px;
+}
+
+#presentation > h2 {
+    text-align: center;
+}
 
 .fa-map-marker-alt {
     margin-right: 20px;
@@ -59,6 +83,7 @@ h1 {
 
 #fonctionnement {
     margin: 20px;
+    max-width: 400px;
 }
 
 .fonctionnement__step {
@@ -69,7 +94,7 @@ h1 {
     height: 60px;
     line-height: 60px;
     font-weight: bold;
-
+    width: 100%;
     position: relative;
 }
 
@@ -104,19 +129,20 @@ h1 {
     padding: 10px;
 }
 
-.card > img {
+img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
 .card {
-    max-width: 400px;
+    max-width: 360px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px var(--bg-medium);
     overflow: hidden;
     position: relative;
-    margin: 20px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .card__nouveau {
@@ -178,6 +204,84 @@ h1 {
     transition: 1s;
 }
 
+#menu-title {
+    margin: 0px;
+    margin-top: -20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+
+#menu-title h2 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.3em;
+    margin: 0px;
+}
+
+#menu-template {
+    display: none;
+}
+
+.menu-section {
+    max-width: 375px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 350px;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.item-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 350px;
+    padding: 10px 0px 10px 5px;
+}
+
+.item-text_title {
+    font-weight: bold;
+}
+
+.item-price {
+    padding: 20px;
+    font-weight: bold;
+
+}
+
+.item-check {
+    background-color: var(--color-tertiary);
+    color: white;
+    width: 0px;
+    padding: 0px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+.menu-item:hover .item-check {
+    width: 60px;
+    padding: 20px;
+    transition: 1s;
+}
+
+.menu-item:hover .item-check .fa{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
 footer {
     color: white;
     background-color: var(--bg-dark);
@@ -192,10 +296,19 @@ footer > h2 {
 footer > ul {
     list-style: none;
     padding-left: 0px;
+    margin-left: 20px;
 }
 
 footer > ul > li{
     margin: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color:inherit;
 }
 
 .flex {

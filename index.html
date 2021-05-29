@@ -1,134 +1,132 @@
 <!doctype html>
 <html class="no-js" lang="fr">
-    <head>
-		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>OhMyFood</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>OhMyFood</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="style.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/38695af7b0.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-		<header>
-			<nav id="title-bar" class="flex center">
-				<h1>ohmyfood</h1>
-			</nav>
-		</header>
-		<main>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/38695af7b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+	<nav id="title-bar" class="flex center">
+		<h1>ohmyfood</h1>
+	</nav>
+	<h2 class="flex center">
+		<i class="fa fa-map-marker-alt"></i> Paris, Belleville
+	</h2>
+</header>
+<main class="flex horizontal center">
+	<section id="presentation">
+		<h2>Reservez le menu qui vous convient</h2>
 
-		<section id="presentation">
-			<h2 class="flex center">
-				<i class="fa fa-map-marker-alt"></i> Paris, Belleville
-			</h2>
-
-			<div id="presentation__details">
-				<div class="flex center">
-					<h2>Reservez le menu qui vous convient</h2>
-				</div>
-				<div>
-					Découvrez des restaurants d'exception, séléctionnés par nos soins.
-				</div>
-				<div id="presentation__boutton_wrapper">
-					<span id="presentation__boutton">Explorez nos restaurants</span>
-				</div>
+		<div id="presentation__details">
+			<div>
+				Découvrez des restaurants d'exception, séléctionnés par nos soins.
 			</div>
-		</section>
-		<section id="fonctionnement">
-			<h2>Fonctionnement</h2>
-			<div class="fonctionnement__step flex center">
-				<i class="fa fa-mobile-alt"></i> Choississez un restaurant
+			<div id="presentation__boutton_wrapper">
+				<span id="presentation__boutton">Explorez nos restaurants</span>
 			</div>
-			<div class="fonctionnement__step flex center">
-				<i class="fa fa-list"></i> Composez votre menu
-			</div>
-			<div class="fonctionnement__step flex center">
-				<i class="fa fa-store"></i> Dégustez au restaurant
-			</div>
-		</section>
+		</div>
+	</section>
+	<section id="fonctionnement">
+		<h2>Fonctionnement</h2>
+		<div class="fonctionnement__step flex center">
+			<i class="fa fa-mobile-alt"></i> Choississez un restaurant
+		</div>
+		<div class="fonctionnement__step flex center">
+			<i class="fa fa-list"></i> Composez votre menu
+		</div>
+		<div class="fonctionnement__step flex center">
+			<i class="fa fa-store"></i> Dégustez au restaurant
+		</div>
+	</section>
 
-		<section id="restaurants">
-			<h2>Restaurants</h2>
-			<div id="cards" class="flex horizontal center">
 
-				<div class="card flex vertical">
-					<div class="card__nouveau">Nouveau</div>
-					<img src="img/1-palette.jpg"></img>
-					<div class="card__foot flex horizontal">
-						<div class="card__text">
-							<div class="card__text_titre">La palette du goût</div>
-							<div class="card__text_desc">Ménilmontant</div>
-						</div>
-						<div class="card__like fa-stack">
-							<i class="fa fa-heart fa-stack-1x"></i>
-							<i class="fa fa-heart-o fa-stack-1x"></i>
-						</div>
+	<section id="restaurants">
+		<h2>Restaurants</h2>
+		<div id="cards" class="flex horizontal center">
+
+			<div class="card flex vertical">
+				<div class="card__nouveau">Nouveau</div>
+				<a href="menu1.html"><img src="img/1-palette.jpg"/></a>
+				<div class="card__foot flex horizontal">
+					<div class="card__text">
+						<div class="card__text_titre">La palette du goût</div>
+						<div class="card__text_desc">Ménilmontant</div>
+					</div>
+					<div class="card__like fa-stack">
+						<i class="fa fa-heart fa-stack-1x"></i>
+						<i class="fa fa-heart-o fa-stack-1x"></i>
 					</div>
 				</div>
-
-				<div class="card flex vertical">
-					<div class="card__nouveau">Nouveau</div>
-					<img src="img/2-note.jpg"></img>
-					<div class="card__foot flex horizontal">
-						<div class="card__text">
-							<div class="card__text_titre">La note enchantée</div>
-							<div class="card__text_desc">Charonne</div>
-						</div>
-						<div class="card__like fa-stack">
-							<i class="fa fa-heart fa-stack-1x"></i>
-							<i class="fa fa-heart-o fa-stack-1x"></i>
-						</div>
-					</div>
-				</div>
-
-				<div class="card flex vertical">
-					<img src="img/3-francaise.jpg"></img>
-					<div class="card__foot flex horizontal">
-						<div class="card__text">
-							<div class="card__text_titre">A la française</div>
-							<div class="card__text_desc">Cité Rouge</div>
-						</div>
-						<div class="card__like fa-stack">
-							<i class="fa fa-heart fa-stack-1x"></i>
-							<i class="fa fa-heart-o fa-stack-1x"></i>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="card flex vertical">
-					<img src="img/4-delice.jpg"></img>
-					<div class="card__foot flex horizontal">
-						<div class="card__text">
-							<div class="card__text_titre">Le délice des sens</div>
-							<div class="card__text_desc">Folie-Méricourt</div>
-						</div>
-						<div class="card__like fa-stack">
-							<i class="fa fa-heart fa-stack-1x"></i>
-							<i class="fa fa-heart-o fa-stack-1x"></i>
-						</div>
-					</div>
-				</div>
-
 			</div>
-		</section>
 
-		</main>
-		<footer>
-			<h2>ohmyfood</h2>
-			<ul>
-				<li><i class="fa fa-utensils"></i> Proposer un restaurant</li>
-				<li><i class="fa fa-handshake"></i> Devenir partenaire</li>
-				<li>Mentions légales</li>
-				<li>Contact</li>
-			</ul>
-		</footer>
+			<div class="card flex vertical">
+				<div class="card__nouveau">Nouveau</div>
+				<img src="img/2-note.jpg"/>
+				<div class="card__foot flex horizontal">
+					<div class="card__text">
+						<div class="card__text_titre">La note enchantée</div>
+						<div class="card__text_desc">Charonne</div>
+					</div>
+					<div class="card__like fa-stack">
+						<i class="fa fa-heart fa-stack-1x"></i>
+						<i class="fa fa-heart-o fa-stack-1x"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="card flex vertical">
+				<img src="img/3-francaise.jpg"/>
+				<div class="card__foot flex horizontal">
+					<div class="card__text">
+						<div class="card__text_titre">À la française</div>
+						<div class="card__text_desc">Cité Rouge</div>
+					</div>
+					<div class="card__like fa-stack">
+						<i class="fa fa-heart fa-stack-1x"></i>
+						<i class="fa fa-heart-o fa-stack-1x"></i>
+					</div>
+				</div>
+			</div>
 
 
-    </body>
+			<div class="card flex vertical">
+				<img src="img/4-delice.jpg"/>
+				<div class="card__foot flex horizontal">
+					<div class="card__text">
+						<div class="card__text_titre">Le délice des sens</div>
+						<div class="card__text_desc">Folie-Méricourt</div>
+					</div>
+					<div class="card__like fa-stack">
+						<i class="fa fa-heart fa-stack-1x"></i>
+						<i class="fa fa-heart-o fa-stack-1x"></i>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+</main>
+<footer>
+	<h2>ohmyfood</h2>
+	<ul>
+		<li><i class="fa fa-utensils"></i> Proposer un restaurant</li>
+		<li><i class="fa fa-handshake"></i> Devenir partenaire</li>
+		<li>Mentions légales</li>
+		<li>Contact</li>
+	</ul>
+</footer>
+
+
+</body>
 </html>

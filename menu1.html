@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>OhMyFood</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/38695af7b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+	<nav id="title-bar" class="flex center">
+		<h1><a href="index.html"> ohmyfood</a></h1>
+	</nav>
+</header>
+<main class="flex horizontal center">
+	<section id="menu" class="flex vertical">
+		<img src="img/1-palette.jpg"/>
+		<div id="menu-title" class="flex horizontal">
+			<h2>À la française</h2>
+			<div class="card__like fa-stack">
+				<i class="fa fa-heart fa-stack-1x"></i>
+				<i class="fa fa-heart-o fa-stack-1x"></i>
+			</div>
+		</div>
+
+		<!--MODELE D'ELEMENT MENU-->
+		<div class="menu-item" id="menu-template">
+			<div class="item-text">
+				<span class="item-text_title"></span><br>
+				<span class="item-text_desc"></span>
+			</div>
+			<div class="item-price"></div>
+			<div class="item-check"><i class="fa fa-check-circle"></i></div>
+		</div>
+
+		<!--MENU-->
+		<div class="flex horizontal center">
+
+			<!--ENTREES-->
+			<div>
+				<h3>Entrées</h3>
+				<hr>
+			</div>
+			<div class="menu-section" id="entrees">
+			</div>
+
+			<!--PLATS-->
+			<div>
+				<h3>Plats</h3>
+				<hr>
+			</div>
+			<div class="menu-section" id="plats">
+			</div>
+
+			<!--DESSERTS-->
+			<div>
+				<h3>Desserts</h3>
+				<hr>
+			</div>
+			<div class="menu-section"id="desserts">
+			</div>
+
+		</div>
+	</section>
+
+</main>
+<footer>
+	<h2>ohmyfood</h2>
+	<ul>
+		<li><i class="fa fa-utensils"></i> Proposer un restaurant</li>
+		<li><i class="fa fa-handshake"></i> Devenir partenaire</li>
+		<li>Mentions légales</li>
+		<li>Contact</li>
+	</ul>
+</footer>
+<script type="text/javascript" src="menu.js"></script>
+
+</body>
+</html>
