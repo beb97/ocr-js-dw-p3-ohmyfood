@@ -19,8 +19,10 @@ main {
 
 h1 {
     font-family: 'Shrikhand', cursive;
-    margin: 10px;
+    margin: auto;
     font-size: 2em;
+    width: 100%;
+    text-align: center;
 }
 
 h2 {
@@ -31,8 +33,7 @@ h2 {
 
 h3 {
     text-transform: uppercase;
-    margin: 0px;
-    margin-left: 10px;
+    margin: 0px 0px 0px 10px;
 }
 
 hr {
@@ -41,14 +42,35 @@ hr {
     margin: 5px 0px 15px 10px;
 }
 
-
-header > h2 {
+#location {
     border-top: 2px solid #D2D2D2;
     background-color: var(--bg-medium);
     padding: 10px;
     margin: 0px;
     color: var(--bg-dark);
+    font-size: 1em;
 }
+
+
+/*https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46*/
+#title-bar {
+    width: 100%;
+}
+
+#title-bar .fa {
+    position: absolute;
+    left: 20px;
+    top: 15px
+}
+
+header {
+    position: sticky;
+    top:0px;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 2px 0px 3px grey;
+}
+
 
 #presentation {
     background-color: var(--bg-light);
@@ -326,6 +348,11 @@ a:visited {
     color:inherit;
 }
 
+/*ANIMATIONS*/
+
+
+
+/*HELPER*/
 .flex {
     display: flex;
     flex-wrap: wrap;
