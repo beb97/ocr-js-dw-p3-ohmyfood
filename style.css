@@ -38,9 +38,9 @@ h3 {
 hr {
     width: 50px;
     border: 2px solid var(--color-tertiary);
-    margin: 5px;
-    margin-left: 10px;
+    margin: 5px 0px 15px 10px;
 }
+
 
 header > h2 {
     border-top: 2px solid #D2D2D2;
@@ -208,6 +208,10 @@ img {
     background-color: var(--bg-light);
 }
 
+.plats {
+    justify-content: center;
+}
+
 .plat {
     margin: 10px;
 }
@@ -245,10 +249,11 @@ img {
     overflow: hidden;
     max-width: 350px;
     align-items: center;
-    height: 80px;
+    height: 70px;
     margin-bottom: 10px;
     background-color: white;
 }
+
 
 .item-text {
     text-overflow: ellipsis;
@@ -279,12 +284,12 @@ img {
     text-align: center;
 }
 
-
 .menu-item:hover .item-check {
-    width: 60px;
-    padding: 20px;
+    width: 40px;
+    padding: 15px;
     transition: 1s;
 }
+
 
 .menu-item:hover .item-check .fa{
     transform: rotate(360deg);
