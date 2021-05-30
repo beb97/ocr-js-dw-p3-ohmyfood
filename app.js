@@ -25,3 +25,7 @@ function append(array, anchor) {
         document.querySelector(anchor).appendChild(clone);
     })
 }
+
+function loadDefaultImage(element) {
+    element.setAttribute("src","img/ohmyfood.png");
+}
